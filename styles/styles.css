@@ -297,16 +297,31 @@ nav{
     align-items: center;
     justify-content: start;
     gap: 1rem;
+    padding: 5px;
 }
 
-.cats>h3{
+.cats h3{
     font-size: 1.125rem;
     color: #534C64;
     font-weight: 400;
 }
 
+.cats:hover{
+    border: #F948B2 1px solid;
+    border-radius: 40px;
+    color: #F948B2;
+}
+
+.cats:hover .cats>h3{
+    color: #F948B2;
+}
+
 
 /* Footer Section Starts */
+
+footer{
+    margin-top: 2rem;
+}
 
 .footer-container{
     background-color: #0B0223;
@@ -327,19 +342,16 @@ nav{
 }
 
 .footer-links-container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
     gap: 40px;
-    flex-wrap: wrap;
 }
 
 .social-links{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 .imp-links{
@@ -414,6 +426,14 @@ nav{
 
     .online-games-images{
         width: 100%;
+    }
+
+    .social-links{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .footer-links-container{
+        grid-template-columns: repeat(3,1fr);
     }
 
 }
