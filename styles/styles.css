@@ -221,7 +221,7 @@ nav{
     border-radius: 10px;
     background-color: #00000050;
     width: 100%;
-    height: 81%;
+    height: calc(100% - 12.7ex);
     z-index: 1;
     top: 0;
 }
@@ -310,6 +310,50 @@ nav{
 
 .footer-container{
     background-color: #0B0223;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.white{
+    color: #FFF;
+}
+
+.footer-links , .fa-brands{
+    color: #FFF;
+}
+
+.footer-links-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.social-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.imp-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.imp-links , .footer-container p{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 /* Styles for Mobiles*/
