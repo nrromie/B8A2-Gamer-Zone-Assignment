@@ -42,7 +42,7 @@ li{
     color: #FFF;
 }
 
-.primary-btn:hover{
+.primary-btn:hover, .nav-btn:hover, .banner-btn:hover {
     background-color: #8758F1;
 }
 
@@ -137,14 +137,13 @@ nav{
 }
 
 .banner-contents{
-    height: 90vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 100px;
 }
 
-.banner-text , .banner-image{
+
+.banner-left , .banner-image{
     width: 50%;
 }
 
@@ -182,6 +181,10 @@ nav{
 }
 
 /* About Us Section Starts*/
+.about-us{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    padding: 50px 0px;
+}
 
 .about-container{
     display: flex;
@@ -436,11 +439,20 @@ footer{
         width: auto;
     }
 
-    .banner-text{
+    .banner-left{
         background-image: url('../images/banner-txt-bg.png');
         background-repeat: no-repeat;
         background-position: left;
-        background-size: 110%;
+        background-size: 100%;
+        width: 100%;
+        padding: 3rem 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-us{
+        background: #FFF;
     }
 
     .about-container{
@@ -509,6 +521,22 @@ footer{
 
     .banner-text , .banner-image{
         width: auto;
+    }
+
+    .banner-left{
+        background-image: url('../images/banner-txt-bg.png');
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 100%;
+        width: 100%;
+        padding: 3rem 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-us{
+        background: #FFF;
     }
 
     .banner-text{
