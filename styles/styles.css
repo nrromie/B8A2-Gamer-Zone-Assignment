@@ -42,8 +42,9 @@ li{
     color: #FFF;
 }
 
-.primary-btn:hover, .nav-btn:hover, .banner-btn:hover {
+.primary-btn:hover, .nav-btn:hover, .banner-btn:hover, .career-btn:hover{
     background-color: #8758F1;
+    color: #FFF;
 }
 
 .less-width{
@@ -90,6 +91,10 @@ nav{
 
 .nav-logo{
     height: 2.8rem;
+}
+
+.nav-logo>img{
+    width: 5.44rem;
 }
 
 .nav-logo>h1{
@@ -358,7 +363,7 @@ nav{
     color: #F948B2;
     font-size: 1.25rem;
     font-weight: 600;
-    padding: 10px 20px;
+    padding: 1rem 1.5rem;
     background-color: #FFF;
     border: none;
     border-radius: 30px;
@@ -389,6 +394,10 @@ nav{
     font-weight: 400;
     background-color: #FFF;
     border: 1px solid #FFF;
+}
+
+.cats>img{
+    width: 3.75rem;
 }
 
 
@@ -448,6 +457,10 @@ footer{
     color: rgba(255, 255, 255, 0.60);
     font-size: 1rem;
     font-weight: 500;
+}
+
+.footer-links:hover, .fa-brands:hover{
+    color: #F948B2;
 }
 
 /* Styles for Mobiles*/
