@@ -566,6 +566,13 @@ footer{
         grid-template-columns: repeat(2,1fr);
     }
 
+    .cats{
+        font-size: 0.8rem;
+    }
+    .cats>img{
+        width: 2.5rem;
+    }
+
 }
 
 /* Styles for Tablets*/
