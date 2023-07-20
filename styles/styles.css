@@ -67,6 +67,10 @@ li{
     margin-bottom: 2rem;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* Navbar Styles Starts */
 
 nav{
@@ -356,6 +360,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 1rem;
 }
 
 .career-btn{
@@ -372,7 +378,8 @@ nav{
 /* Categories section starts */
 
 .categories{
-    margin-top: 200px;
+    margin-top: 12rem;
+    margin-bottom: 12rem;
 }
 
 .cat-container{
@@ -428,7 +435,7 @@ footer{
     color: #FFF;
 }
 
-.footer-links , .fa-brands{
+.footer-links>a , .fa-brands{
     color: #FFF;
 }
 
@@ -444,6 +451,7 @@ footer{
     display: grid;
     grid-template-columns: repeat(6,1fr);
     gap: 1.25rem;
+    text-align: center;
 }
 
 .imp-links{
@@ -453,13 +461,13 @@ footer{
     text-align: center;
 }
 
-.imp-links , .footer-container p{
+.imp-links a , .footer-container p{
     color: rgba(255, 255, 255, 0.60);
     font-size: 1rem;
     font-weight: 500;
 }
 
-.footer-links:hover, .fa-brands:hover{
+.footer-links>a:hover, .fa-brands:hover ,.imp-links a:hover{
     color: #F948B2;
 }
 
@@ -467,7 +475,7 @@ footer{
 @media (max-width: 576px) {
 
     html{
-        font-size: 55%;
+        font-size: 70%;
     }
 
     .less-width{
@@ -542,6 +550,10 @@ footer{
         width: auto;
     }
 
+    .career-list{
+        font-size: 0.8rem;
+    }
+
     .social-links{
         grid-template-columns: repeat(3,1fr);
     }
@@ -560,7 +572,7 @@ footer{
 @media (min-width: 577px) and (max-width: 991px) {
 
     html{
-        font-size: 66%;
+        font-size: 80%;
     }
 
     .less-width{
